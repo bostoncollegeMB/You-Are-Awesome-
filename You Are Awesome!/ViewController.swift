@@ -18,12 +18,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showMessagePress(_ sender: UIButton) {
-        messageLabel.text = "You Are Awesome!"
-        messageLabel.textColor = UIColor.red    }
-    
-    @IBAction func showNewMessage(_ sender: UIButton) { messageLabel.text = "You are Great!"
-        messageLabel.textColor = UIColor.brown
-    }
+        if messageLabel.text == "You Are Awesome!"
+        { messageLabel.text = "You Are Great!"}
+        else if messageLabel.text == "You Are Great!" {
+            messageLabel.text = "You Are Amazing!"}
+        else { messageLabel.text = "You Are Awesome!"}
     
 }
 
+}
