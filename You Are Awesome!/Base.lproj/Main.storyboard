@@ -25,7 +25,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inm-Cp-9o0">
-                                <rect key="frame" x="135.5" y="84.5" width="104" height="30"/>
+                                <rect key="frame" x="135.5" y="84" width="104" height="31"/>
                                 <state key="normal" title="Show Message">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -43,11 +43,27 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hg-Ff-wt9">
+                                <rect key="frame" x="118" y="157" width="139" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="tvr-4c-1yr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Show a new message">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showNewMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gt1-Po-KlO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="3hg-Ff-wt9" firstAttribute="centerX" secondItem="Inm-Cp-9o0" secondAttribute="centerX" id="AmG-rV-VqS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3hg-Ff-wt9" secondAttribute="bottom" constant="481" id="IEg-u9-KqU"/>
                             <constraint firstItem="Inm-Cp-9o0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-234" id="YwM-o2-UKX"/>
+                            <constraint firstItem="3hg-Ff-wt9" firstAttribute="top" secondItem="Inm-Cp-9o0" secondAttribute="bottom" constant="42" id="agG-3y-Bvd"/>
                             <constraint firstItem="Inm-Cp-9o0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eRv-Kg-Mhx"/>
                             <constraint firstItem="rya-nb-WDR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kxW-O7-zS2"/>
                             <constraint firstItem="rya-nb-WDR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-270" id="pFz-gv-Hfg"/>
